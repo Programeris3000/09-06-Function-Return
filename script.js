@@ -2,14 +2,14 @@
 // 1.1. Funkcija priima vieną parametrą: žmogaus amžius.
 // 1.2. Funkcija grąžina atsakymą tokiu formatu: 5 žmogaus metai yra 35 šuns metai.
 
-// function humanToDogYears(humanYears) {
-//   let dogYears = humanYears * 7
-//   let output = `${humanYears} žmogaus metai yra ${dogYears} šuns metai.`
-//   return output
-// }
+function humanToDogYears(humanYears) {
+  let dogYears = humanYears * 7
+  let output = `${humanYears} žmogaus metai yra ${dogYears} šuns metai.`
+  return output
+}
 
-// console.log(humanToDogYears(25))
-// console.log(humanToDogYears(10))
+console.log(humanToDogYears(25))
+console.log(humanToDogYears(10))
 
 // 2. Funkciją, kuri skaičiuoja per kiek laiko reikia perskaityti knygą, kad pasiekti užsibrėžtą knygų per metaus skaičių:
 // 2.1. Funkcija priima vieną parametrą: norimų per metus perskaityti knygų skaičių.
@@ -23,6 +23,20 @@ return output
 }
 console.log(calculateBooks(10))
 console.log(calculateBooks(15))
+
+//Mandresne versija
+// function calculateBooks(books) {
+//   let booksCounter = 365 / books;
+//   let days = Math.floor(booksCounter); // Suapvaliname žemyn į artimiausią mažesnį sveiką skaičių
+//   let hours = (booksCounter - days) * 24; // Paverčiame liekaną valandomis
+//   let output = `Norint perskaityti ${books} knygų per metus, vienai knygai perskaityti turėsi ${days} dienas ir ${hours.toFixed(0)} valandas.`; // Suapvaliname valandas be liekanos
+//   return output;
+// }
+
+// console.log(calculateBooks(2));
+// console.log(calculateBooks(15));
+
+// function calculateBooks(books)
 
 // 3. Funkciją, kuri konvertuoja dienas į savaites:
 // 3.1. Funkcija priima vieną argumentą: dienų skaičių.
@@ -96,3 +110,7 @@ function converter3(months){
  return output 
 }
 console.log(converter3(1))
+
+
+
+
